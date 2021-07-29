@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,57 @@
     <title>JS Document Object Model</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
 
+    <p id="object"></p>
 
-    <script src="./add.js"></script>
+    <h1>Clarusway</h1>
+    <div id="demo">
+        <p>Hello Clarusway</p>
+        <p>Document Object Model (DOM)</p>
+    </div>
+    <p id="DOM"></p>
+
+    <!--  /******************************************* */ -->
+    <!-- /* onclick Event Type */ -->
+
+    <p> Click the following button and see result</p>
+    <input type="button" onclick="sayHello()" value="Say Hello" />
+
+    <!--  /******************************************* */ -->
+    <!--    /* onsubmit Event Type */ -->
+
+    <form method="POST" action="t.cgi" onsubmit="return validate()">
+        <input type="submit" value="Submit" />
+    </form>
+
+    <!--     /******************************************* */
+/* onmouseover and onmouseout Event Type */ -->
+
+    <p>Bring your mouse inside the division to see the result:</p>
+    <div onmouseover="over()" onmouseout="out()">
+        <h2> This is inside the division </h2>
+    </div>
+
+    <!--  ******************************************* -->
+
+    <button id="ok">OK</button>
+
+    <!--  ******************************************* -->
+
+    <h1 class="change">Hello!</h1>
+    <button class="changeColor">Click me</button>
+
+    <ul class="name-list">
+        <li>Ed</li>
+        <li>Jon</li>
+        <li>Joe</li>
+        <li>Boy</li>
+        <li>Harry</li>
+    </ul>
+
+    <script src="./app.js"></script>
 </body>
+
 </html>
